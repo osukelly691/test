@@ -4,36 +4,36 @@
 
 If you or your business find FluentValidation useful, [please consider making a donation](http://www.pledgie.com/campaigns/8403)
 
-- [Creating a Validator Class](Creating-a-Validator.md)
-  * [Chaining Validators](Creating-a-Validator.md#chaining-validators-for-the-same-property)
-  * [Validation Results](Creating-a-Validator.md#validation-results)
-  * [Throwing Exceptions](Creating-a-Validator.md#throwing-exceptions)
-  * [Re-using Validators on Complex Properties](Creating-a-Validator.md#complex-properties)
-  * [Re-using Validators on Nested Collections](Creating-a-Validator.md#collections)
-  * [Rule Sets](Creating-a-Validator.md#RuleSets)
-- [Built in Validators](Built-In-Validators.md)
-  * [NotNull Validator](Built-In-Validators.md#notnull-validator)
-  * [NotEmpty Validator](Built-In-Validators.md#notempty-validator)
-  * [NotEqual Validator](Built-In-Validators.md#notequal-validator)
-  * [Equal Validator](Built-In-Validators.md#equal-validator)
-  * [Length Validator](Built-In-Validators.md#length-validator)
-  * [Less Than Validator](Built-In-Validators.md#less-than-validator)
-  * [Less Than Or Equal Validator](Built-In-Validators.md#less-than-or-equal-validator)
-  * [Greater Than Validator](Built-In-Validators.md#greater-than-validator)
-  * [GreaterThan Or Equal Validator](Built-In-Validators.md#greater-than-or-equal-validator)
-  * [Predicate Validator (aka Must)](Built-In-Validators.md#predicate-validator)
-  * [RegEx Validator](Built-In-Validators.md#regular-expression-validator)
-  * [Email Validator](Built-In-Validators.md#email-validator)
-- [Configuring/Customising a validator](Configuring-a-Validator.md)
-  * [Overriding the default error message](Configuring-a-Validator.md#overriding-the-default-error)
-  * [Overriding the default property name](Configuring-a-Validator.md#overriding-the-default-property-name)
-  * [Specifying a condition with When/Unless](Configuring-a-Validator.md#user-content-specifying-a-condition-with-whenunless)
-  * [Specifying the cascade mode](Configuring-a-Validator.md#setting-the-cascade-mode)
-- [Custom Validators](CustomValidators.md)
-  * [Writing a custom Property Validator](Custom-Validators.md#writing-a-custom-property-validator)
-  * [Using AbstractValidator.Custom](Custom-Validators.md#using-abstractvalidatorcustom)
-- [Localization](Localization.md)
-- [Testing Validators](Testing.md)
-- [Integrating with ASP.NET MVC](MVC.md)
-- [Using a Validator Factory with an IoC container](IoC.md)
-- [Installation via NuGet](nuget.md)
+- [[Creating a Validator Class|Creating a Validator]]
+  * [[Chaining Validators|Creating a Validator#chaining-validators-for-the-same-property]]
+  * [[Validation Results|Creating a Validator#validation-results]]
+  * [[Throwing Exceptions|Creating a Validator#throwing-exceptions]]
+  * [[Re-using Validators on Complex Properties|Creating a Validator#complex-properties]]
+  * [[Re-using Validators on Nested Collections|Creating a Validator#collections]]
+  * [[Rule Sets|Creating a Validator#RuleSets]]
+- [[Built in Validators|Built In Validators]]
+  * [[NotNull Validator|Built In Validators#notnull-validator]]
+  * [[NotEmpty Validator|Built In Validators#notempty-validator]]
+  * [[NotEqual Validator|Built In Validators#notequal-validator]]
+  * [[Equal Validator|Built In Validators#equal-validator]]
+  * [[Length Validator|Built In Validators#length-validator]]
+  * [[Less Than Validator|Built In Validators#less-than-validator]]
+  * [[Less Than Or Equal Validator|Built In Validators#less-than-or-equal-validator]]
+  * [[Greater Than Validator|Built In Validators#greater-than-validator]]
+  * [[GreaterThan Or Equal Validator|Built In Validators#greater-than-or-equal-validator]]
+  * [[Predicate Validator (aka Must)|Built In Validators#predicate-validator]]
+  * [[RegEx Validator|Built In Validators#regular-expression-validator]]
+  * [[Email Validator|Built In Validators#email-validator]]
+- [[Configuring/Customising a validator|Configuring a Validator]]
+  * [[Overriding the default error message|Configuring a Validator#overriding-the-default-error]]
+  * [[Overriding the default property name|Configuring a Validator#overriding-the-default-property-name]]
+  * [[Specifying a condition with When/Unless|Configuring a Validator#user-content-specifying-a-condition-with-whenunless]]
+  * [[Specifying the cascade mode|Configuring a Validator#setting-the-cascade-mode]]
+- [[Custom Validators|Custom Validators]]
+  * [[Writing a custom Property Validator|Custom Validators#writing-a-custom-property-validator]]
+  * [[Using AbstractValidator.Custom|Custom Validators#using-abstractvalidatorcustom]]
+- [[Localization|Localization]]
+- [[Testing Validators|Testing]]
+- [[Integrating with ASP.NET MVC|MVC]]
+- [[Using a Validator Factory with an IoC container|IoC]]
+- [[Installation via NuGet|nuget]]
