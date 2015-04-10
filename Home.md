@@ -1,9 +1,5 @@
 ## Documentation
 
-[![Support FluentValidation](http://www.pledgie.com/campaigns/8403.png?skin_name=chrome)](http://www.pledgie.com/campaigns/8403)
-
-If you or your business find FluentValidation useful, [please consider making a donation](http://www.pledgie.com/campaigns/8403)
-
 ### Example
 ```csharp
 using FluentValidation;
