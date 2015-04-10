@@ -1,6 +1,5 @@
 ## Documentation
 
-### Example
 ```csharp
 using FluentValidation;
 
