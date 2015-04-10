@@ -1,4 +1,4 @@
-## Documentation
+## Example
 
 ```csharp
 using FluentValidation;
@@ -25,7 +25,7 @@ bool validationSucceeded = results.IsValid;
 IList<ValidationFailure> failures = results.Errors;
 ```
 
-### Documentation
+## Documentation
 - [[Creating a Validator Class|Creating a Validator]]
   * [[Chaining Validators|Creating a Validator#chaining-validators-for-the-same-property]]
   * [[Validation Results|Creating a Validator#validation-results]]
