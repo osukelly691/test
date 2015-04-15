@@ -32,7 +32,7 @@ IList<ValidationFailure> failures = results.Errors;
   * [[Throwing Exceptions|Creating a Validator#throwing-exceptions]]
   * [[Re-using Validators on Complex Properties|Creating a Validator#complex-properties]]
   * [[Re-using Validators on Nested Collections|Creating a Validator#collections]]
-  * [[Rule Sets|Creating a Validator#RuleSets]]
+  * [[Rule Sets|Creating a Validator#rulesets]]
 - [[Built in Validators|Built In Validators]]
   * [[NotNull Validator|Built In Validators#notnull-validator]]
   * [[NotEmpty Validator|Built In Validators#notempty-validator]]
