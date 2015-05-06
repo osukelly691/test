@@ -61,7 +61,7 @@ String format args:
 * {PropertyValue} = The current value of the property
 
 ## Length Validator
-Description: Ensures that the length of a particular string property is within the specified range.
+Description: Ensures that the length of a particular string property is within the specified range. However, it doesn't ensure that the string property isn't null.
 
 Example:
 ```csharp
