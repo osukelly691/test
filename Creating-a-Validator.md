@@ -1,5 +1,3 @@
-_[Previous page](https://github.com/JeremySkinner/FluentValidation/wiki) |  [Next page](https://github.com/JeremySkinner/FluentValidation/wiki/Creating-a-Validator#chaining-validators-for-the-same-property)_
-
 ## Creating a Validator
 
 Before creating any validators, you will need to add a reference to **FluentValidation.dll**
