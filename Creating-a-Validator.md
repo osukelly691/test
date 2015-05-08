@@ -1,4 +1,4 @@
-__[Previous page](https://github.com/JeremySkinner/FluentValidation/wiki) |  [Next page](https://github.com/JeremySkinner/FluentValidation/wiki/Creating-a-Validator#chaining-validators-for-the-same-property)__
+_[Previous page](https://github.com/JeremySkinner/FluentValidation/wiki) |  [Next page](https://github.com/JeremySkinner/FluentValidation/wiki/Creating-a-Validator#chaining-validators-for-the-same-property)_
 
 ## Creating a Validator
 
