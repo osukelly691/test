@@ -1,3 +1,5 @@
+_[Next page](https://github.com/JeremySkinner/FluentValidation/wiki/Creating-a-Validator)_
+
 ## Example
 
 ```csharp
