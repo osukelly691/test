@@ -143,12 +143,47 @@ Notes: Only valid on types that implement IComparable<T>
 
 ## Predicate Validator
 Also known as "Must"
-Description: Passes the value of the specified property into a custom delegate that can perform custom validation logic on the value
+Description: Passes the value of the specified property into a custom delegate that can perform custom validation logic on the value. 
 
-Example:
+The delegate, if invoked directly, is passed the object as its first parameter and the value of the property as its second argument. If instead the object itself is being tested with no property specified, the delegate is passed the object in a single argument.
+
+The 'Must' validation can also receive a Lambda expression, either accepting the property only, or the property along with the object as its first argument.
+
+Examples:
+
+1. Invoking the Must directly on a property
 ```csharp
-RuleFor(customer => customer.Surname).Must(surname => "Foo".Equals(surname));
+RuleFor(customer => customer.Identification).Must(BeUniqueId);
+// ... and later on in the class code, note 'customer' as the first argument
+public bool BeUniqueId(Customer customer, CustomerId id) {  if (id == ...
 ```
+
+2. Invoking the Must validation, directly on the object without specifying a property
+```csharp
+RuleFor(customer => customer).Must(HaveUniqueId);
+// ... and later on in the class code
+public bool HaveUniqueId(Customer customer) { if (customer.Id == ... 
+```
+3. Invoking the Must validation with a Lambda expression specifying the property:
+```csharp
+RuleFor(customer => customer.Id).Must(id => IsUniqueId(id));
+// ... and later in the class
+public bool IsUniqueId(ID id) { if (id == ... 
+```
+
+4. Invoking the Must valudation with a Lambda expression specifying the object along with the property:
+```csharp
+RuleFor(customer => customer.Id).Must((customer, id) => IsUniqueId(customer.Department, id));
+// ... and later in the class
+public bool IsUniqueId(Department dept, ID id) { if (dept < 3 && id == ... 
+```
+Note: In the last example the object itself can be passed to the delegate function. The error message will still be pertaining to the designated property. For example: 
+```csharp
+RuleFor(customer => customer.Id).Must((customer, id) => IsUniqueId(customer, id));
+// ... and later in the class
+public bool IsUniqueId(Customer cust, ID id) { if (cust.Dept < 3 && id == ... 
+```
+
 Example error: The specified condition was not met for 'Surname' 
 String format args: 
 * {PropertyName} = The name of the property being validated
@@ -157,10 +192,10 @@ String format args:
 Note that there is an additional overload for Must that also accepts an instance of the parent object being validated. This can be useful if you want to compare the current property with another property from inside the predicate:
 
 ```csharp
-RuleFor(customer => customer.Surname).Must((customer, surname) => surname != customer.Forename)
+RuleFor(customer => customer.Identification).Must((customer, identification) => checkId(identification, customer.Department) == true);
+// ... and later on in file
+private bool checkId(string id, Department department)...
 ```
-
-(Note that in this particular example, it would be better to use the cross-property version of NotEqual)
 
 ## Regular Expression Validator
 Description: Ensures that the value of the specified property matches the given regular expression. 
