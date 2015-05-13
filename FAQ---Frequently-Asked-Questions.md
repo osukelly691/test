@@ -13,7 +13,7 @@
   
         foreach (var member in d.GetMembersWithValidators())  
             foreach (var rule in member)  
-                rules += "property:" member.Key + " validation:" + rule +  Environment.NewLine;  
+                rules += "property:" + member.Key + " validation:" + rule +  Environment.NewLine;  
         return rules;  
     }
 ```
