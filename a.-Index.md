@@ -1,5 +1,5 @@
 ## Documentation table of contents
-- [[FAQ|FAQ - Frequently Asked Questions]]
+- [[FAQ - Frequently Asked Questions|FAQ]]
 - [[Creating a Validator Class|Creating a Validator]]
   * [[Chaining Validators|Creating a Validator#chaining-validators-for-the-same-property]]
   * [[Validation Results|Creating a Validator#validation-results]]
