@@ -5,12 +5,13 @@
 # How do I get a list of all the rules per property that has been set
 * use the following code in you validator: 
 
-`public string AllRules()  
-{  
-    string rules = "";  
-    var d = this.CreateDescriptor();  
-    foreach (var member in d.GetMembersWithValidators())  
-        foreach (var rule in member)  
-            rules += member.Key + " r:" + rule. +  Environment.NewLine;  
-    return rules;
-}`
+`    public string AllRules()`  
+`    {`  
+`        string rules = "";`  
+`        var d = this.CreateDescriptor();`  
+`        foreach (var member in d.GetMembersWithValidators())`  
+`            foreach (var rule in member)`  
+`                rules += member.Key + " r:" + rule. +  Environment.NewLine;`  
+`        return rules;`  
+`    }`
+
