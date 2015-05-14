@@ -12,7 +12,9 @@ Note that custom error messages can contain placeholders for special values such
 RuleFor(customer => customer.Surname).NotNull().WithMessage("Please ensure you have entered your {PropertyName}");
 ```
 
-...and the value 'Surname' will be inserted. For a complete list of error message placeholders see the the [[Built in Validators|c. Built In Validators]] page. 
+...and the value 'Surname' will be inserted. 
+
+For a complete list of error message placeholders see the the [[Built in Validators|c. Built In Validators]] page. Each built in validator has its own supported placeholders. 
 
 It is also possible to use your own custom arguments in the validation message. These can either be static values or references to other properties on the object being validated:
 
