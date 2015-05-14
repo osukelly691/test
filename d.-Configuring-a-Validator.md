@@ -14,6 +14,24 @@ RuleFor(customer => customer.Surname).NotNull().WithMessage("Please ensure you h
 
 ...and the value 'Surname' will be inserted. 
 
+### Configuring Error Message Parameters (Placeholders) 
+
+As specified in the example above, the message can contain placeholders for special values such as '{PropertyName}' - which will be replaced with a specified value. Each type of built-in validator has its own list of placeholders which are supported by it. 
+
+The placeholders are: 
+Used in all validators: 
+* '{PropertyName}' - The name of the property being validated
+* '{PropertyValue}' - The value of the property being validated
+These include the predicate validator ('Must' validator), the email and the regex validators. 
+
+Used in comparisn validators: (Equal, NotEqual, GreaterThan, GreaterThanOrEqual, etc.)
+* {ComparisonValue} = Value that the property should be compared to
+
+Used only in the Length validator: 
+* {MinLength} = Minimum length
+* {MaxLength} = Maximum length
+* {TotalLength} = Number of characters entered
+
 For a complete list of error message placeholders see the the [[Built in Validators|c. Built In Validators]] page. Each built in validator has its own supported placeholders. 
 
 It is also possible to use your own custom arguments in the validation message. These can either be static values or references to other properties on the object being validated:
