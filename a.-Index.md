@@ -1,7 +1,7 @@
 See [[Index|a. Index]]
 
 ## Documentation table of contents
-- [[FAQ - Frequently Asked Questions|FAQ]]
+- [[FAQ - Frequently Asked Questions|z. FAQ]]
 - [[Creating a Validator Class|b. Creating a Validator]]
   * [[Chaining Validators|b. Creating a Validator#chaining-validators-for-the-same-property]] || [[Validation Results|b. Creating a Validator#validation-results]]
   * [[Throwing Exceptions|b. Creating a Validator#throwing-exceptions]]
