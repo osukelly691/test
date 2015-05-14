@@ -6,13 +6,13 @@ You can override the default error message for a validator by calling the WithMe
 RuleFor(customer => customer.Surname).NotNull().WithMessage("Please ensure that you have entered your Surname");
 ```
 
-Note that custom error messages can contain placeholders for special values such as the name of the property being validated. This means the above error message could be re-written as:
+Note that custom error messages can contain placeholders for special values such as '{PropertyName}' - which will be replaced in this example with the name of the property being validated. This means the above error message could be re-written as:
 
 ```
 RuleFor(customer => customer.Surname).NotNull().WithMessage("Please ensure you have entered your {PropertyName}");
 ```
 
-...and the value 'Surname' will be inserted. For a complete list of error message placeholders see the Validators page. 
+...and the value 'Surname' will be inserted. For a complete list of error message placeholders see the the [[Built in Validators|c. Built In Validators]] page. 
 
 It is also possible to use your own custom arguments in the validation message. These can either be static values or references to other properties on the object being validated:
 
