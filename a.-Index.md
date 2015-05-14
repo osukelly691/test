@@ -2,10 +2,9 @@ See [[Index|a. Index]]
 
 ## Documentation table of contents
 - [[FAQ - Frequently Asked Questions|z. FAQ]]
-- [[Creating a Validator Class|b. Creating a Validator]]
-  * [[Chaining Validators|b. Creating a Validator#chaining-validators-for-the-same-property]] || [[Validation Results|b. Creating a Validator#validation-results]]
-  * [[Throwing Exceptions|b. Creating a Validator#throwing-exceptions]]
-  * Re-using Validators: [[on Complex Properties|b. Creating a Validator#complex-properties]] || and [[on Nested Collections|b. Creating a Validator#collections]]
+- [[Creating a Validator Class|b. Creating a Validator]] || [[Chaining Validators|b. Creating a Validator#chaining-validators-for-the-same-property]]  
+  * [[Validation Results|b. Creating a Validator#validation-results]] || [[Throwing Exceptions|b. Creating a Validator#throwing-exceptions]]
+  * **Re-using Validators**: [[on Complex Properties|b. Creating a Validator#complex-properties]] || and [[on Nested Collections|b. Creating a Validator#collections]]
   * [[Rule Sets|b. Creating a Validator#rulesets]]
 - [[Built in Validators|c. Built In Validators]]
   * [[NotNull Validator|c. Built In Validators#notnull-validator]] || [[NotEmpty Validator|c. Built In Validators#notempty-validator]]
