@@ -1,4 +1,4 @@
-_[To Documentation Index](https://github.com/JeremySkinner/FluentValidation/wiki/Creating-a-Validator)_
+_[To Documentation Index](https://github.com/JeremySkinner/FluentValidation/wiki/Index)_
 
 ## Example
 
