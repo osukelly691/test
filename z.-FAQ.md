@@ -8,14 +8,28 @@
 * use the following code in you validator: 
 
 ```C#
-    public string AllRules()  
-    {  
-        string rules = "";  
-        var d = this.CreateDescriptor();  
-  
-        foreach (var member in d.GetMembersWithValidators())  
-            foreach (var rule in member)  
-                rules += "property:" + member.Key + " validation:" + rule +  Environment.NewLine;  
-        return rules;  
+    using FluentValidation.Internal;
+
+    //... class definition with some rules defined during construction and then:
+
+    public List<string>AllRules()
+    {           
+        var rules = new List<string>();
+        var descriptor = this.CreateDescriptor();
+        foreach( var member in descriptor.GetMembersWithValidators()  )
+            foreach( var validationRule in descriptor.GetRulesForMember(member.Key)  )
+            {
+                var rule = (PropertyRule)validationRule; // cast 
+                foreach( var validator  in rule.Validators )
+                    rules.Add(
+                        string.Format("validator:{0} | display:{1} | property:{2} | member:{3} | expression:{4}", 
+                                            validator.ToString().Replace("FluentValidation.Validators.",""),
+                                            rule.PropertyName,
+                                            rule.GetDisplayName(),
+                                            rule.Member,
+                                            rule.Expression));
+            }
+        return rules;
     }
+
 ```
