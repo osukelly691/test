@@ -4,7 +4,7 @@ FluentValidation can be integrated with ASP.NET MVC 4 and WebApi (with some limi
 
 To enable MVC integration, you'll need to add a reference to the `FluentValidation.Mvc5` assembly (available through the FluentValidation.Mvc5 NuGet packages). 
 
-Once installed, you'll need to configure the *FluentValidationModelValidatorProvider* (which lives in the FluentValidation.Mvc namespace) during the Application_Start event of your MVC application. 
+Once installed, you'll need to configure the *FluentValidationModelValidatorProvider* (which lives in the FluentValidation.Mvc namespace) during the Application_Start event of your MVC application [located in Global.asax]. 
 
 ```csharp
 protected void Application_Start() {
