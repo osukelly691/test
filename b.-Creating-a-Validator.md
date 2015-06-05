@@ -34,7 +34,7 @@ the validator class would look like this:
 using FluentValidation;
 
 public class CustomerValidator : AbstractValidator<Customer> {
-  public CustomerValidator {
+  public CustomerValidator() {
     RuleFor(customer => customer.Surname).NotNull();
   }
 }
@@ -48,7 +48,7 @@ You can chain multiple validators together for the same property:
 using FluentValidation;
 
 public class CustomerValidator : AbstractValidator<Customer> {
-  public CustomerValidator {
+  public CustomerValidator() {
     RuleFor(customer => customer.Surname).NotNull().NotEqual("foo");
   }
 }
