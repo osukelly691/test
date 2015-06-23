@@ -44,7 +44,7 @@ RuleFor(customer => x.Surname).NotNull().WithMessage("This message references so
 //Referencing other property values:
 RuleFor(customer => customer.Surname)
   .NotNull()
-  .WithMesasge("This message references some other properties: Forename: {0} Discount: {1}", 
+  .WithMessage("This message references some other properties: Forename: {0} Discount: {1}", 
     customer => customer.Forename, 
     customer => customer.Discount
   );
