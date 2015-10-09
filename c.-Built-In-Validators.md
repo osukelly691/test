@@ -171,7 +171,7 @@ RuleFor(customer => customer.Id).Must(id => IsUniqueId(id));
 public bool IsUniqueId(ID id) { if (id == ... 
 ```
 
-4. Invoking the Must valudation with a Lambda expression specifying the object along with the property:
+4. Invoking the Must validation with a Lambda expression specifying the object along with the property:
 ```csharp
 RuleFor(customer => customer.Id).Must((customer, id) => IsUniqueId(customer.Department, id));
 // ... and later in the class
