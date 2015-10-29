@@ -24,7 +24,7 @@ Used in all validators:
 * '{PropertyValue}' - The value of the property being validated
 These include the predicate validator ('Must' validator), the email and the regex validators. 
 
-Used in comparisn validators: (Equal, NotEqual, GreaterThan, GreaterThanOrEqual, etc.)
+Used in comparison validators: (Equal, NotEqual, GreaterThan, GreaterThanOrEqual, etc.)
 * {ComparisonValue} = Value that the property should be compared to
 
 Used only in the Length validator: 
@@ -144,7 +144,7 @@ To set the cascade mode globally, you can set the CascadeMode property on the st
 ValidatorOptions.CascadeMode = CascadeMode.StopOnFirstFailure;
 ```
 
-This can then be overriden by individual validator classes or by individual rules.
+This can then be overridden by individual validator classes or by individual rules.
 
 To set the cascade mode for all rules inside a single validator class, set the `CascadeMode` property on `AbstractValidator`:
 
