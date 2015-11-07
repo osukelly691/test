@@ -100,6 +100,27 @@ Note that FluentValidation will also work with ASP.NET MVC's client-side validat
 * EqualTo (cross-property equality comparison)
 * Length
 
+## Firing validations manually
+
+Sometimes you want to fire a validation manually in MVC:
+
+```csharp
+Customer customer = new Customer();
+CustomerValidator validator = new CustomerValidator();
+ValidationResult results = validator.Validate(customer);
+
+bool validationSucceeded = results.IsValid;
+IList<ValidationFailure> failures = results.Errors;
+```
+
+But this doesn't add all the errors to the ModelState object. You can use an extension method to help you with that:
+
+```csharp
+results.AddToModelState(modelstate, null);
+```
+
+The second parameter is a prefix that you can pass to have the full name of the property with an error associated correctly.
+
 ## Validator customization
 
 The downside of using this automatic integration is that you don’t have access to the validator directly which means that you don’t have as much control over the validation processes compared to running the validator manually.
